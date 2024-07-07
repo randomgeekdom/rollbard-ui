@@ -3,7 +3,8 @@
     <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
       <mat-icon>menu</mat-icon>
     </button>
-    <span>Rollbard</span>
+    <a class="logo" href="/">
+      <span>Rollbard <img src="assets/dice.svg" alt="logo" height="20px" /></span></a>
     <span class="menu-spacer"></span>
   </mat-toolbar-row>
 </mat-toolbar>
@@ -15,11 +16,10 @@
       <a href="#" mat-list-item>Menu Item 3</a>
       <a href="#" mat-list-item>Menu Item 4</a>
       <a href="#" mat-list-item>Menu Item 5</a>
-      <a href="#"mat-list-item>Menu Item 6</a>
-      
+      <a href="#" mat-list-item>Menu Item 6</a>
+
       <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="main-content">Main content</mat-sidenav-content>
 </mat-sidenav-container>
-
