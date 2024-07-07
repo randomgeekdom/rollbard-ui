@@ -11,8 +11,8 @@
 <mat-sidenav-container fxFlexFill>
   <mat-sidenav #sidenav>
     <mat-nav-list>
-      <a href="#" mat-list-item>Menu Item 1</a>
-      <a href="#" mat-list-item>Menu Item 2</a>
+      <a href="/home" mat-list-item>Home</a>
+      <a href="/terra-machina" mat-list-item>Terra Machina</a>
       <a href="#" mat-list-item>Menu Item 3</a>
       <a href="#" mat-list-item>Menu Item 4</a>
       <a href="#" mat-list-item>Menu Item 5</a>
@@ -21,5 +21,7 @@
       <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content class="main-content">Main content</mat-sidenav-content>
+  <mat-sidenav-content class="main-content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>
