@@ -4,19 +4,21 @@
       <mat-icon>menu</mat-icon>
     </button>
     <a class="logo" href="/">
-      <span>Rollbard <img src="assets/dice.svg" alt="logo" height="20px" /></span></a>
+      <span>Rollbard
+        <!-- <img src="assets/dice.svg" alt="logo" height="20px" /> -->
+      </span></a>
     <span class="menu-spacer"></span>
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container fxFlexFill>
-  <mat-sidenav #sidenav>
+  <mat-sidenav #sidenav class="navigation">
     <mat-nav-list>
       <a href="/home" mat-list-item>Home</a>
       <a href="/terra-machina" mat-list-item>Terra Machina</a>
-      <a href="#" mat-list-item>Menu Item 3</a>
+      <!-- <a href="#" mat-list-item>Menu Item 3</a>
       <a href="#" mat-list-item>Menu Item 4</a>
       <a href="#" mat-list-item>Menu Item 5</a>
-      <a href="#" mat-list-item>Menu Item 6</a>
+      <a href="#" mat-list-item>Menu Item 6</a> -->
 
       <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
     </mat-nav-list>

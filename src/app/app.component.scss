@@ -3,10 +3,15 @@
   }
 
 .main-content{
-    line-height:calc(100vh - 100px);
-    width: calc(100vw - 25px);
+
+    // line-height:calc(100vh - 100px);
+    // width: calc(100vw - 25px);
     margin: 10px;
-    text-align: center;
+    // text-align: center;
+}
+.mat-drawer-container{
+    
+    height: 100%;
 }
 
 .logo{
@@ -14,4 +19,8 @@
     color: white;
     align-items: center;
     vertical-align: middle;
+}
+
+.navigation{
+    width: 250px;
 }
