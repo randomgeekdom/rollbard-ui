@@ -1,0 +1,33 @@
+
+<h1>Character Generator</h1>
+
+<mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name" [(ngModel)]="npc.FirstName">
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Surname</mat-label>
+    <input matInput placeholder="Surname" [(ngModel)]="npc.LastName">
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Gender</mat-label>
+    <!-- <input  matInput placeholder="Gender" [(ngModel)]="Gender"> -->
+    <select matNativeControl [(ngModel)]="npc.Gender">
+        <option *ngFor="let gender of GetGenders()" [value]="gender">{{GetGender(gender)}}</option>
+    </select>
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Hometown</mat-label>
+    <input matInput placeholder="Hometown" [(ngModel)]="npc.Hometown">
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Job</mat-label>
+    <input matInput placeholder="Job" [(ngModel)]="npc.Job">
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="Title" [(ngModel)]="npc.Title">
+</mat-form-field>
+<div>
+    <button mat-raised-button color="primary" (click)="generate()">Generate</button>
+</div>
