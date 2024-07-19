@@ -1,6 +1,9 @@
 
-<h1>Character Generator</h1>
+<h1>Character Roller</h1>
 
+<div>
+    <button mat-raised-button color="primary" (click)="generate()">Roll</button>
+</div>
 <mat-form-field appearance="fill">
     <mat-label>Name</mat-label>
     <input matInput placeholder="Name" [(ngModel)]="npc.FirstName">
@@ -28,6 +31,3 @@
     <mat-label>Title</mat-label>
     <input matInput placeholder="Title" [(ngModel)]="npc.Title">
 </mat-form-field>
-<div>
-    <button mat-raised-button color="primary" (click)="generate()">Generate</button>
-</div>
