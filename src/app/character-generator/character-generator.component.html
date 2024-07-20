@@ -27,7 +27,9 @@
     <mat-label>Job</mat-label>
     <input matInput placeholder="Job" [(ngModel)]="npc.Job">
 </mat-form-field>
-<mat-form-field appearance="fill">
-    <mat-label>Title</mat-label>
-    <input matInput placeholder="Title" [(ngModel)]="npc.Title">
+
+
+<mat-form-field appearance="fill" *ngIf="IsRuler">
+    <mat-label>Ruler Title</mat-label>
+    <input matInput placeholder="Ruler Title" [(ngModel)]="npc.Title">
 </mat-form-field>

@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { BrowserModule } from '@angular/platform-browser';
 import { Gender, NPC, NPCGenerator } from '@randomgeekdom/rollbard';
 
 @Component({
@@ -37,5 +38,9 @@ export class CharacterGeneratorComponent {
   
   GetGenders(): Gender[]{
     return <Gender[]>Object.values(Gender).filter(value => !isNaN(Number(value)));
+  }
+
+  get IsRuler(){
+    return this.npc?.Job.trim().toLowerCase() === "ruler";
   }
 }
