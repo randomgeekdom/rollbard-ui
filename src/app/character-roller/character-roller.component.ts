@@ -8,7 +8,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Gender, NPC, NPCGenerator } from '@randomgeekdom/rollbard';
 
 @Component({
-  selector: 'app-character-generator',
+  selector: 'app-character-roller',
   standalone: true,
   imports: [
     MatButtonModule,
@@ -17,18 +17,18 @@ import { Gender, NPC, NPCGenerator } from '@randomgeekdom/rollbard';
     ReactiveFormsModule,
     CommonModule,
     FormsModule],
-  templateUrl: './character-generator.component.html',
-  styleUrl: './character-generator.component.scss'
+  templateUrl: './character-roller.component.html',
+  styleUrl: './character-roller.component.scss'
 })
-export class CharacterGeneratorComponent {
+export class CharacterRollerComponent {
   npcGenerator = new NPCGenerator();
   npc!: NPC;
 
   constructor() {
-    this.generate();
+    this.roll();
   }
 
-  generate() {
+  roll() {
     this.npc = this.npcGenerator.Generate();
   }
 
