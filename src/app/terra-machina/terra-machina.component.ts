@@ -8,7 +8,7 @@ import { BrowserModule } from '@angular/platform-browser';
 @Component({
   selector: 'app-terra-machina',
   standalone: true,
-  imports: [MatCardModule, CommonModule, BrowserModule],
+  imports: [MatCardModule, CommonModule],
   templateUrl: './terra-machina.component.html',
   styleUrl: './terra-machina.component.scss'
 })
