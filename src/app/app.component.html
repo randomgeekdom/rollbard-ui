@@ -13,9 +13,14 @@
 <mat-sidenav-container fxFlexFill>
   <mat-sidenav #sidenav class="navigation">
     <mat-nav-list>
-      <a href="/home" mat-list-item>Home</a>
+      <!-- This needs to be fixed -->
+      <a *ngFor="let route of routes" [routerLink]="route.path" mat-list-item (click)="sidenav.toggle()">
+        {{ route.data && route.data['title'] }}
+      </a> 
+   
+      <!-- <a href="/home" mat-list-item>Home</a>
       <a href="/terra-machina" mat-list-item>Terra Machina</a>
-      <a href="/character-roller" mat-list-item>Character Roller</a>
+      <a href="/character-roller" mat-list-item>Character Roller</a> -->
       <!-- <a href="/zumaroeth" mat-list-item>Zumaroeth</a> -->
       <!-- <a href="#" mat-list-item>Menu Item 3</a>
       <a href="#" mat-list-item>Menu Item 4</a>

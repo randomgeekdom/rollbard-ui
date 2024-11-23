@@ -1,8 +1,9 @@
 Save cards to localhost
 
-Add FATE Core resources page
+Create Fate Core Character
 
 Add Auth0
     Add .NET Core API
         Add Save to API
 
+Plot Generator
