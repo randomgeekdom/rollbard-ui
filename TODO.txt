@@ -2,8 +2,7 @@ Save cards to localhost
 
 Add FATE Core resources page
 
-Add blog to home page
-
 Add Auth0
     Add .NET Core API
         Add Save to API
+
