@@ -1,0 +1,9 @@
+.character-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .character-card {
+    flex: 0 0 33.33%; /* Adjust the flex value to control the width of each card */
+    margin: 10px;
+  }

@@ -1,6 +1,4 @@
-
 <h1>Character Roller</h1>
-
 <div>
     <button mat-raised-button color="primary" (click)="roll()">Roll</button>
 </div>
@@ -27,9 +25,18 @@
     <mat-label>Job</mat-label>
     <input matInput placeholder="Job" [(ngModel)]="npc.Job">
 </mat-form-field>
-
-
 <mat-form-field appearance="fill" *ngIf="IsRuler">
     <mat-label>Ruler Title</mat-label>
     <input matInput placeholder="Ruler Title" [(ngModel)]="npc.Title">
 </mat-form-field>
+<div class="character-cards">
+    <div *ngFor="let character of characters" class="character-card">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>{{character.FirstName}} {{character.LastName}}</mat-card-title>
+                <mat-card-subtitle>{{character.Gender}} {{character.Hometown}} {{character.Job}}
+                    {{character.Title}}</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+    </div>
+</div>
