@@ -6,4 +6,8 @@ Add Auth0
     Add .NET Core API
         Add Save to API
 
-Plot Generator
+Plot Roller
+
+Worldbuilder
+
+Redo Home Page with links to Plot GEnerator and Character Roller
