@@ -8,6 +8,4 @@ Add Auth0
 
 Plot Roller
 
-Worldbuilder
-
-Redo Home Page with links to Plot GEnerator and Character Roller
+World Roller

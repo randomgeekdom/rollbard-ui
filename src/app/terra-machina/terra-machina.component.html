@@ -1,23 +1,27 @@
-<mat-card appearance="outlined">
-    <mat-card-header>
-        <h1>Terra Machina</h1>
-    </mat-card-header>
-    <mat-card-content>
-        <p>Over the course of millennia, what began as a world of fantasy and myth advances beyond its ages of
-            primitivity, agriculture, conquest, exploration, and industry. It is now an age of technology. Life
-            transpires on the spectrum of science and sorcery. It is a world where the gods of the machine coexist with
-            the gods of the natural world. Welcome to Terra Machina. </p>
+<div class="terra-machina-card">
+    <mat-card appearance="outlined">
+        <mat-card-header>
+            <h1>Terra Machina</h1>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                Over the course of millennia, what began as a world of fantasy and myth advances beyond its ages of
+                primitivity, agriculture, conquest, exploration, and industry. It is now an age of technology. Life
+                transpires on the spectrum of science and sorcery. It is a world where the gods of the machine coexist
+                with the gods of the natural world. Welcome to Terra Machina.
+            </p>
 
-        <p>Terra Machina is a tabletop RPG based that takes inspiration from Japanese roleplaying video games of the
-            32-bit console era. It imagines a fantasy world where time has passed to the point where technology is just
-            as powerful as magic. It is meant to be a unique experience that combines the best elements of fantasy,
-            science fiction, and action.</p>
-
-    </mat-card-content>
-    <mat-card-actions>
-        <p>
-            <a href="assets/Terra-Machina-Rulebook.pdf">Download</a>
-        </p>
-    </mat-card-actions>
-
-</mat-card>
+            <p>
+                Terra Machina is a tabletop RPG that takes inspiration from Japanese roleplaying video games of the
+                32-bit console era. It imagines a fantasy world where time has passed to the point where technology is
+                just as powerful as magic. It is meant to be a unique experience that combines the best elements of
+                fantasy, science fiction, and action.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="openUrl('assets/Terra-Machina-Rulebook.pdf')">
+                Download
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
