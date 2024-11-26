@@ -1,13 +1,13 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatInputModule } from '@angular/material/input';
-import { BrowserModule } from '@angular/platform-browser';
-import { Gender, NPC, NPCGenerator } from '@randomgeekdom/rollbard';
+import {CommonModule} from '@angular/common';
+import {Component} from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatInputModule} from '@angular/material/input';
+import {Gender, NPC, NPCGenerator} from '@randomgeekdom/rollbard';
+import {CharacterLoaderService} from "../services/character-loader.service";
 
 @Component({
   selector: 'app-character-roller',
@@ -29,13 +29,21 @@ export class CharacterRollerComponent {
   npc!: NPC;
   characters: NPC[] = [];
 
-  constructor() {
-    this.roll();
+  constructor(private characterLoader: CharacterLoaderService) {
+    let characters = characterLoader.getCharacters();
+    if (characters.length > 0) {
+      this.characters = characters;
+      this.npc = characters[0];
+    }
+    else{
+      this.roll();
+    }
   }
 
   roll() {
     this.npc = this.npcGenerator.Generate();
     this.characters = [...this.characters, this.npc];
+    this.characterLoader.saveCharacters(this.characters);
   }
 
   GetGender(gender: Gender) {
@@ -49,6 +57,7 @@ export class CharacterRollerComponent {
   SelectCharacter(character: NPC): void {
     this.npc = character;
   }
+
   get IsRuler() {
     return this.npc?.Job.trim().toLowerCase() === "ruler";
   }

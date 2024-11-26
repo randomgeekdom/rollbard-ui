@@ -1,11 +1,27 @@
-Save cards to localhost
+Character Roller - Save cards to localhost
 
 Create Fate Core Character
 
 Add Auth0
     Add .NET Core API
-        Add Save to API
+        Add Save to API - Cosmos
 
 Plot Roller
 
 World Roller
+
+Fix www issue
+
+Home page - Find image for Plot roller
+
+Home page - find image for Character Roller
+
+Character Roller - Reverse order of cards
+
+Character Roller - Redo name generation algorithm
+
+Character Roller - Show Gender on card properly
+
+Check vulnerable dependencies and upgrade
+
+Navbar - Fix redirect issue on close
