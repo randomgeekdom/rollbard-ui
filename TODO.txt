@@ -12,10 +12,6 @@ World Roller
 
 Fix www issue
 
-Home page - Find image for Plot roller
-
-Home page - find image for Character Roller
-
 Character Roller - Reverse order of cards
 
 Character Roller - Redo name generation algorithm
