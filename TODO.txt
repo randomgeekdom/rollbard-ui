@@ -1,5 +1,3 @@
-Character Roller - Save cards to localhost
-
 Create Fate Core Character
 
 Add Auth0
@@ -7,6 +5,11 @@ Add Auth0
         Add Save to API - Cosmos
 
 Plot Roller
+    Villain Roller
+    Hero Roller
+    Setting Roller - Starting location - Ending Location
+
+Fate Core
 
 World Roller
 
