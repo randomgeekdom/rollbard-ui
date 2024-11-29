@@ -9,9 +9,10 @@ Plot Roller
     Hero Roller
     Setting Roller - Starting location - Ending Location
 
-Fate Core
-
 World Roller
+  Region Roller
+  Nation Roller
+  Faction Roller
 
 Fix www issue
 

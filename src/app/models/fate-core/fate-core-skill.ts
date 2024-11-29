@@ -1,4 +1,4 @@
 export default class FateCoreSkill{
-  name = "";
-  level = 0;
+  constructor(public name: string = "", public level: number = 0) {
+  }
 }
