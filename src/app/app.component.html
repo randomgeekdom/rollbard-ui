@@ -18,7 +18,10 @@
         {{ route.data && route.data['title'] }}
       </a>
 
-      <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+    <app-auth-button></app-auth-button>
+
+      <a (click)="sidenav.toggle()" mat-list-item>Close</a>
+
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="main-content">
