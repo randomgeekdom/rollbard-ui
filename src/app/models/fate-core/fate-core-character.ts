@@ -1,13 +1,14 @@
 import FateCoreStunt from "./fate-core-stunt";
 import FateCoreStressTrack from "./fate-core-stress-track";
 import FateCoreSkill from "./fate-core-skill";
+import FateCoreTextValue from "./fate-core-text-value";
 
 export default class FateCoreCharacter {
   name = "";
   description = "";
-  aspects: string[] = [];
+  aspects: FateCoreTextValue[] = [];
   stunts: FateCoreStunt[] = [];
-  extras: string[] = [];
+  extras: FateCoreTextValue[] = [];
   stressTracks: FateCoreStressTrack[] = [];
   consequence2: string = "";
   consequence4: string = "";

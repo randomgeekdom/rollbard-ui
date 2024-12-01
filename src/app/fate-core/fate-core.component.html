@@ -14,13 +14,13 @@
       <mat-label>Aspects</mat-label>
       <div *ngFor="let aspect of character.aspects; let i = index">
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Aspect" [(ngModel)]="character.aspects[i]" name="aspects-{{i}}">
+          <input matInput placeholder="Aspect" [(ngModel)]="character.aspects[i].value" name="aspects-{{i}}">
         </mat-form-field>
         <button mat-icon-button color="warn" (click)="character.aspects.splice(i, 1)">
           <mat-icon>delete</mat-icon>
         </button>
       </div>
-      <button mat-icon-button color="primary" (click)="character.aspects.push('')">
+      <button mat-icon-button color="primary" (click)="character.aspects.push({value: ''})">
         <mat-icon>add</mat-icon>
       </button>
     </div>
@@ -29,9 +29,11 @@
       <mat-label>Stunts</mat-label>
       <div *ngFor="let stunt of character.stunts; let i = index">
         <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
           <input matInput placeholder="Stunt Name" [(ngModel)]="character.stunts[i].name" name="stunt-name-{{i}}">
         </mat-form-field>
         <mat-form-field class="example-full-width">
+          <mat-label>Description</mat-label>
           <input matInput placeholder="Stunt Description" [(ngModel)]="character.stunts[i].description" name="stunt-description-{{i}}">
         </mat-form-field>
         <button mat-icon-button class="delete-icon" (click)="character.stunts.splice(i, 1)"><mat-icon>delete</mat-icon></button>
@@ -45,13 +47,13 @@
       <mat-label>Extras</mat-label>
       <div *ngFor="let extra of character.extras; let i = index">
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Extra" [(ngModel)]="character.extras[i]" name="extras-{{i}}">
+          <input matInput placeholder="Extra" [(ngModel)]="character.extras[i].value" name="extras-{{i}}">
         </mat-form-field>
         <button mat-icon-button class="delete-icon" (click)="character.extras.splice(i, 1)">
           <mat-icon>delete</mat-icon>
         </button>
       </div>
-      <button mat-icon-button color="primary" (click)="character.extras.push('')">
+      <button mat-icon-button color="primary" (click)="character.extras.push({value: ''})">
         <mat-icon>add</mat-icon>
       </button>
     </div>
@@ -110,7 +112,7 @@
     <div>
       <strong>Aspects:</strong>
       <ul>
-        <li *ngFor="let aspect of character.aspects">{{aspect}}</li>
+        <li *ngFor="let aspect of character.aspects">{{aspect.value}}</li>
       </ul>
     </div>
     <div>
@@ -122,7 +124,7 @@
     <div>
       <strong>Extras:</strong>
       <ul>
-        <li *ngFor="let extra of character.extras">{{extra}}</li>
+        <li *ngFor="let extra of character.extras">{{extra.value}}</li>
       </ul>
     </div>
     <div>
