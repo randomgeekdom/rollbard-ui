@@ -1,8 +1,7 @@
-Create Fate Core Character
-
 Fix Auth0 button
     Add .NET Core API
-        Add Save to API - Cosmos
+        Character Roller - Add Save to API - Cosmos
+        Fate Core - Add Save to API - Cosmos
 
 Plot Roller
     Villain Roller
@@ -14,10 +13,6 @@ World Roller
   Nation Roller
   Faction Roller
 
-Fix www issue
-
-Character Roller - Reverse order of cards
-
 Character Roller - Redo name generation algorithm
 
 Character Roller - Show Gender on card properly
@@ -25,3 +20,6 @@ Character Roller - Show Gender on card properly
 Check vulnerable dependencies and upgrade
 
 Navbar - Fix redirect issue on close
+
+Fate Core - Dice Roller
+  Add roller to skills

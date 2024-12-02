@@ -30,7 +30,7 @@
     <input matInput placeholder="Ruler Title" [(ngModel)]="npc.Title">
 </mat-form-field>
 <div class="character-cards">
-    <div *ngFor="let character of characters" class="character-card">
+    <div *ngFor="let character of orderedCharacters" class="character-card">
         <mat-card>
             <mat-card-header>
                 <mat-card-title>{{character.FirstName}} {{character.LastName}}</mat-card-title>

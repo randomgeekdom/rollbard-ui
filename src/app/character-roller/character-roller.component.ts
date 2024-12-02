@@ -61,4 +61,8 @@ export class CharacterRollerComponent {
   get IsRuler() {
     return this.npc?.Job.trim().toLowerCase() === "ruler";
   }
+
+  get orderedCharacters(): NPC[] {
+    return this.characters.reverse();
+  }
 }
