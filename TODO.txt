@@ -1,7 +1,6 @@
-Fix Auth0 button in navbar
-    Add .NET Core API
-        Character Roller - Add Save to API - Cosmos
-        Fate Core - Add Save to API - Cosmos
+Add .NET Core API
+    Character Roller - Add Save to API - Cosmos
+    Fate Core - Add Save to API - Cosmos
 
 Plot Roller
     Villain Roller
@@ -23,3 +22,9 @@ Fate Core - Dice Roller
 Rollbard Library - Rename a Generator to Roller
 
 Character Roller - Make the card a sentence (A {gender} from {hometown} who is a {job})
+
+Navbar => Reposition clos button at top and turn into icon
+
+Navbar => Put a divider between pages and login/logout
+
+Auth Button => Make it pretty
