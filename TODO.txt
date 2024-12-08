@@ -13,8 +13,6 @@ World Roller
   Nation Roller
   Faction Roller
 
-Character Roller - Redo name generation algorithm
-
 Character Roller - Show Gender on card properly
 
 Check vulnerable dependencies and upgrade
@@ -23,3 +21,5 @@ Navbar - Fix redirect issue on close
 
 Fate Core - Dice Roller
   Add roller to skills
+
+ Rollbard Library - Rename Generator to Roller
