@@ -1,4 +1,4 @@
-Fix Auth0 button
+Fix Auth0 button in navbar
     Add .NET Core API
         Character Roller - Add Save to API - Cosmos
         Fate Core - Add Save to API - Cosmos
@@ -13,8 +13,6 @@ World Roller
   Nation Roller
   Faction Roller
 
-Character Roller - Show Gender on card properly
-
 Check vulnerable dependencies and upgrade
 
 Navbar - Fix redirect issue on close
@@ -22,4 +20,6 @@ Navbar - Fix redirect issue on close
 Fate Core - Dice Roller
   Add roller to skills
 
- Rollbard Library - Rename Generator to Roller
+Rollbard Library - Rename a Generator to Roller
+
+Character Roller - Make the card a sentence (A {gender} from {hometown} who is a {job})

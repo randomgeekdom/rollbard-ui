@@ -21,7 +21,6 @@ export class AppComponent {
   routes: Routes;
 
   constructor(private router: Router){
-    debugger;
     this.routes = this.router.config.filter((route: Route) => route.data && route.data['show']);
   }
 }
