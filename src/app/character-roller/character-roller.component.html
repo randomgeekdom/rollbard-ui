@@ -34,8 +34,9 @@
         <mat-card>
             <mat-card-header>
                 <mat-card-title>{{character.FirstName}} {{character.LastName}}</mat-card-title>
-                <mat-card-subtitle>{{GetGender(character.Gender)}} {{character.Hometown}} {{character.Job}}
-                    {{character.Title}}</mat-card-subtitle>
+                <mat-card-subtitle>
+                  {{GetGenderPronounWithVerb(character.Gender)}} {{GetJobWithArticle(character.Job)}} from {{character.Hometown}}
+                </mat-card-subtitle>
             </mat-card-header>
         </mat-card>
     </div>

@@ -65,4 +65,23 @@ export class CharacterRollerComponent {
   get orderedCharacters(): NPC[] {
     return this.characters.reverse();
   }
+
+  GetGenderPronounWithVerb(gender: Gender) {
+    switch (gender){
+      case Gender.Male:
+        return "He is";
+      case Gender.Female:
+        return "She is";
+      case Gender.Other:
+        return "They are";
+      default:
+        return "It is";
+    }
+  }
+
+  GetJobWithArticle(Job: string) {
+    let vowels = ["a", "e", "i", "o", "u"];
+    let article = vowels.includes(Job[0].toLowerCase()) ? "an" : "a";
+    return article + " " + Job.toLowerCase();
+  }
 }
