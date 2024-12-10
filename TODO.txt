@@ -1,6 +1,7 @@
-Add .NET Core API
-    Character Roller - Add Save to API - Cosmos
-    Fate Core - Add Save to API - Cosmos
+Add auth to core API
+    Add cosmos to core API
+      Character Roller - Add Save to API - Cosmos
+      Fate Core - Add Save to API - Cosmos
 
 Plot Roller
     Villain Roller
@@ -20,9 +21,14 @@ Fate Core - Dice Roller
   Add roller to skills
 
 Rollbard Library - Rename a Generator to Roller
+  Add to rollbard library
 
 Navbar => Reposition clos button at top and turn into icon
 
 Navbar => Put a divider between pages and login/logout
 
 Auth Button => Make it pretty
+
+Rollbard Reviews
+
+Home Page - Update to put a focus on me "Anthony C. Jones"
