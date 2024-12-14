@@ -13,8 +13,6 @@ World Roller
   Nation Roller
   Faction Roller
 
-Check vulnerable dependencies and upgrade
-
 Navbar - Fix redirect issue on close
 
 Fate Core - Dice Roller
@@ -32,3 +30,9 @@ Auth Button => Make it pretty
 Rollbard Reviews
 
 Home Page - Update to put a focus on me "Anthony C. Jones"
+
+Vigilant City
+
+Check vulnerable dependencies and upgrade
+
+Home Page - Plot Roller - Blue button
