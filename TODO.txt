@@ -10,7 +10,6 @@ Plot Roller
     Setting Roller - Starting location - Ending Location
 
 World Roller
-  Add World Roller to Home page
   Region Roller
   Nation Roller
   Faction Roller
@@ -36,5 +35,3 @@ Home Page - Update to put a focus on me "Anthony C. Jones"
 Vigilant City
 
 Check vulnerable dependencies and upgrade
-
-Home Page - Plot Roller - Blue button
