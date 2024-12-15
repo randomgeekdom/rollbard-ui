@@ -1,7 +1,8 @@
-Add auth to core API
-    Add cosmos to core API
-      Character Roller - Add Save to API - Cosmos
-      Fate Core - Add Save to API - Cosmos
+Deploy Core API
+  Add auth to core API
+      Add cosmos to core API
+        Character Roller - Add Save to API - Cosmos
+        Fate Core - Add Save to API - Cosmos
 
 Plot Roller
     Villain Roller
@@ -9,6 +10,7 @@ Plot Roller
     Setting Roller - Starting location - Ending Location
 
 World Roller
+  Add World Roller to Home page
   Region Roller
   Nation Roller
   Faction Roller
