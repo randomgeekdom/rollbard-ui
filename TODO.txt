@@ -22,8 +22,6 @@ Fate Core - Dice Roller
 Rollbard Library - Rename a Generator to Roller
   Add to rollbard library
 
-Navbar => Reposition clos button at top and turn into icon
-
 Auth Button => Make it pretty
 
 Rollbard Reviews

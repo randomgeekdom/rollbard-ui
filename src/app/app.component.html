@@ -13,6 +13,9 @@
 <mat-sidenav-container fxFlexFill>
   <mat-sidenav #sidenav class="navigation">
     <mat-nav-list>
+      <a (click)="sidenav.toggle()" mat-list-item>
+        <mat-icon>close</mat-icon>
+      </a>
       <!-- This needs to be fixed -->
       <a *ngFor="let route of routes" [routerLink]="route.path" mat-list-item (click)="sidenav.toggle()">
         {{ route.data && route.data['title'] }}
@@ -22,7 +25,6 @@
 
       <app-auth-button></app-auth-button>
 
-      <a (click)="sidenav.toggle()" mat-list-item>Close</a>
 
     </mat-nav-list>
   </mat-sidenav>
