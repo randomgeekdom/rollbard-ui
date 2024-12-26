@@ -4,17 +4,18 @@ Deploy Core API
         Character Roller - Add Save to API - Cosmos
         Fate Core - Add Save to API - Cosmos
 
-Plot Roller
-    Villain Roller
-    Hero Roller
-    Setting Roller - Starting location - Ending Location
+Villain Roller
+
+Monster roller
+
+Hero Roller
+
+Setting Roller (location)
 
 World Roller
   Region Roller
   Nation Roller
   Faction Roller
-
-Navbar - Fix redirect issue on close
 
 Fate Core - Dice Roller
   Add roller to skills
@@ -31,3 +32,9 @@ Home Page - Update to put a focus on me "Anthony C. Jones"
 Vigilant City
 
 Check vulnerable dependencies and upgrade
+
+Order navbar links by name except home
+
+Have a submenu in navbar links for rollers
+
+Plot Roller (NEEDS Villain roller, Monster roller, Hero Roller, Setting Roller)
