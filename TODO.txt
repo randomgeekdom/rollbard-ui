@@ -33,8 +33,8 @@ Vigilant City
 
 Check vulnerable dependencies and upgrade
 
-Order navbar links by name except home
-
 Have a submenu in navbar links for rollers
 
 Plot Roller (NEEDS Villain roller, Monster roller, Hero Roller, Setting Roller)
+
+Redo afterworld as a game in Rollbard

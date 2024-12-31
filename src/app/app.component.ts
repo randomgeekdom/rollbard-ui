@@ -21,6 +21,7 @@ export class AppComponent {
   routes: Routes;
 
   constructor(private router: Router){
-    this.routes = this.router.config.filter((route: Route) => route.data && route.data['show']);
+    let routes = this.router.config.filter((route: Route) => route.data && route.data['show']);
+    this.routes = routes.sort((a: Route, b: Route) => a.data!['title'].localeCompare(b.data!['title']));
   }
 }

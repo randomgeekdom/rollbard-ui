@@ -9,7 +9,7 @@ import {ReviewsComponent} from "./reviews/reviews.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent, data: {title: 'Home', show: true}},
+  {path: 'home', component: HomeComponent, data: {title: ' - Home - ', show: true}},
   {path: 'character-roller', component: CharacterRollerComponent, data: {title: 'Character Roller', show: true}},
   {path: 'fate-core', component: FateCoreComponent, data: {title: 'FATE Core', show: true}},
   {path: 'plot-roller', component: PlotRollerComponent, data: {title: 'Plot Roller', show: true}},
