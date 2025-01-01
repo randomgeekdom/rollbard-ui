@@ -6,12 +6,21 @@ import {FateCoreComponent} from './fate-core/fate-core.component';
 import {PlotRollerComponent} from './plot-roller/plot-roller.component';
 import {WorldRollerComponent} from "./world-roller/world-roller.component";
 import {ReviewsComponent} from "./reviews/reviews.component";
+import {FateCoreCharacterComponent} from "./fate-core/fate-core-character/fate-core-character.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent, data: {title: ' - Home - ', show: true}},
   {path: 'character-roller', component: CharacterRollerComponent, data: {title: 'Character Roller', show: true}},
-  {path: 'fate-core', component: FateCoreComponent, data: {title: 'FATE Core', show: true}},
+  {
+    path: 'fate-core',
+    component: FateCoreComponent,
+    data: {title: 'FATE Core', show: true},
+    children: [
+      {path: '', redirectTo: '/fate-core/character', pathMatch: 'full'},
+      {path: 'character', component: FateCoreCharacterComponent},
+    ]
+  },
   {path: 'plot-roller', component: PlotRollerComponent, data: {title: 'Plot Roller', show: true}},
   {path: 'reviews', component: ReviewsComponent, data: {title: 'Reviews', show: true}},
   {path: 'terra-machina', component: TerraMachinaComponent, data: {title: 'Terra Machina', show: true}},

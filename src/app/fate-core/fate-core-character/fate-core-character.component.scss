@@ -1,0 +1,16 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.example-form, .character-display {
+  flex: 1;
+  padding: 16px;
+}

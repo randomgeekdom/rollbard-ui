@@ -1,0 +1,149 @@
+<div class="container">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" [(ngModel)]="character.name" name="name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="Description" [(ngModel)]="character.description" name="description"></textarea>
+    </mat-form-field>
+
+    <div class="aspects-container example-full-width">
+      <mat-label>Aspects</mat-label>
+      <div *ngFor="let aspect of character.aspects; let i = index">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Aspect" [(ngModel)]="character.aspects[i].value" name="aspects-{{i}}">
+        </mat-form-field>
+        <button mat-icon-button color="warn" (click)="character.aspects.splice(i, 1)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+      <button mat-icon-button color="primary" (click)="character.aspects.push({value: ''})">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+
+    <div class="stunts-container example-full-width">
+      <mat-label>Stunts</mat-label>
+      <div *ngFor="let stunt of character.stunts; let i = index">
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Stunt Name" [(ngModel)]="character.stunts[i].name" name="stunt-name-{{i}}">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Description</mat-label>
+          <input matInput placeholder="Stunt Description" [(ngModel)]="character.stunts[i].description" name="stunt-description-{{i}}">
+        </mat-form-field>
+        <button mat-icon-button class="delete-icon" (click)="character.stunts.splice(i, 1)"><mat-icon>delete</mat-icon></button>
+      </div>
+      <button mat-icon-button color="primary" (click)="character.stunts.push({name: '', description: ''})">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+
+    <div class="extras-container example-full-width">
+      <mat-label>Extras</mat-label>
+      <div *ngFor="let extra of character.extras; let i = index">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Extra" [(ngModel)]="character.extras[i].value" name="extras-{{i}}">
+        </mat-form-field>
+        <button mat-icon-button class="delete-icon" (click)="character.extras.splice(i, 1)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+      <button mat-icon-button color="primary" (click)="character.extras.push({value: ''})">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+
+    <div class="skills-container example-full-width">
+      <mat-label>Skills</mat-label>
+      <div *ngFor="let skill of character.skills; let i = index">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Name" [value]="skill.name" readonly>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput type="number" [(ngModel)]="character.skills[i].level" name="skills-{{i}}">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="stress-tracks-container example-full-width">
+      <mat-label>Stress Tracks</mat-label>
+      <div *ngFor="let stressTrack of character.stressTracks">
+        <div class="stress-track-header">{{stressTrack.name}}</div>
+        <div class="stress-track-checkboxes">
+          <mat-checkbox [(ngModel)]="stressTrack.stress1" name="stress1-{{stressTrack.name}}">1</mat-checkbox>
+          <mat-checkbox [(ngModel)]="stressTrack.stress2" name="stress2-{{stressTrack.name}}">2</mat-checkbox>
+          <mat-checkbox [(ngModel)]="stressTrack.stress3" name="stress3-{{stressTrack.name}}">3</mat-checkbox>
+          <mat-checkbox [(ngModel)]="stressTrack.stress4" name="stress4-{{stressTrack.name}}">4</mat-checkbox>
+        </div>
+      </div>
+    </div>
+
+    <div class="consequence-container example-full-width">
+      <div class="consequence-header">Consequence</div>
+      <div class="consequence-inputs">
+        <mat-form-field class="example-full-width">
+          <mat-label>2</mat-label>
+          <input matInput placeholder="Consequence 2" [(ngModel)]="character.consequence2" name="consequence2">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>4</mat-label>
+          <input matInput placeholder="Consequence 4" [(ngModel)]="character.consequence4" name="consequence4">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>6</mat-label>
+          <input matInput placeholder="Consequence 6" [(ngModel)]="character.consequence6" name="consequence6">
+        </mat-form-field>
+      </div>
+    </div>
+    <button mat-raised-button color="primary" (click)="save()">Save</button>
+  </form>
+
+  <div class="character-display">
+    <h2>Character Preview</h2>
+    <p><strong>Name:</strong> {{character.name}}</p>
+    <p><strong>Description:</strong> {{character.description}}</p>
+    <div>
+      <strong>Aspects:</strong>
+      <ul>
+        <li *ngFor="let aspect of character.aspects">{{aspect.value}}</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Stunts:</strong>
+      <ul>
+        <li *ngFor="let stunt of character.stunts">{{stunt.name}}: {{stunt.description}}</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Extras:</strong>
+      <ul>
+        <li *ngFor="let extra of character.extras">{{extra.value}}</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Skills:</strong>
+      <ul>
+        <li *ngFor="let skill of character.skills">{{skill.name}}: {{skill.level}}</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Stress Tracks:</strong>
+      <ul>
+        <li *ngFor="let stressTrack of character.stressTracks">{{stressTrack.name}} - {{stressTrack.stress1}}, {{stressTrack.stress2}}, {{stressTrack.stress3}}, {{stressTrack.stress4}}</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Consequences:</strong>
+      <p>2: {{character.consequence2}}</p>
+      <p>4: {{character.consequence4}}</p>
+      <p>6: {{character.consequence6}}</p>
+    </div>
+  </div>
+</div>
