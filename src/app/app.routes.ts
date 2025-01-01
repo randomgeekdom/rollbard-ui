@@ -7,6 +7,7 @@ import {PlotRollerComponent} from './plot-roller/plot-roller.component';
 import {WorldRollerComponent} from "./world-roller/world-roller.component";
 import {ReviewsComponent} from "./reviews/reviews.component";
 import {FateCoreCharacterComponent} from "./fate-core/fate-core-character/fate-core-character.component";
+import {VigilantCityComponent} from "./vigilant-city/vigilant-city.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -24,5 +25,6 @@ export const routes: Routes = [
   {path: 'plot-roller', component: PlotRollerComponent, data: {title: 'Plot Roller', show: true}},
   {path: 'reviews', component: ReviewsComponent, data: {title: 'Reviews', show: true}},
   {path: 'terra-machina', component: TerraMachinaComponent, data: {title: 'Terra Machina', show: true}},
+  {path: 'vigilant-city', component: VigilantCityComponent, data: {title: 'Vigilant City', show: true}},
   {path: 'world-roller', component: WorldRollerComponent, data: {title: 'World Roller', show: true}}
 ];
