@@ -8,7 +8,7 @@ Villain Roller
 
 Monster roller
 
-Hero Roller
+Hero Roller - Add an entry
 
 Setting Roller (location)
 
@@ -29,12 +29,16 @@ Rollbard Reviews
 
 Home Page - Update to put a focus on me "Anthony C. Jones"
 
-Vigilant City
+Vigilante Power Roller
+  Vigilante Origin Roller
+    Vigilante Alignment Roller
+      Vigilante Roller
+        Vigilant City (use above rollers and villain roller)
 
 Check vulnerable dependencies and upgrade
 
 Have a submenu in navbar links for rollers
 
-Plot Roller (NEEDS Villain roller, Monster roller, Hero Roller, Setting Roller)
+Plot Roller (NEEDS Villain roller, Monster roller, Setting Roller)
 
 Redo afterworld as a game in Rollbard
