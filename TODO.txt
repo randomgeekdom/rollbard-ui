@@ -10,7 +10,7 @@ Monster roller
 
 Hero Roller - Add an entry
 
-Setting Roller (location)
+Setting Roller - Add an entry
 
 World Roller
   Region Roller
