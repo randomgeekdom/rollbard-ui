@@ -1,12 +1,13 @@
-Deploy Core API
-  Add auth to core API
-      Add cosmos to core API
-        Character Roller - Add Save to API - Cosmos
-        Fate Core - Add Save to API - Cosmos
+Develop New tabletop RPG based on FATE Condensed?
+
+Add auth to core API
+    Add cosmos to core API
+      Character Roller - Add Save to API - Cosmos
+      Fate Core - Add Save to API - Cosmos
 
 Villain Roller
 
-Monster roller
+Monster roller - Add an entry
 
 Hero Roller - Add an entry
 
