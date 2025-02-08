@@ -36,8 +36,6 @@ Vigilante Power Roller
       Vigilante Roller
         Vigilant City (use above rollers and villain roller)
 
-Check vulnerable dependencies and upgrade
-
 Have a submenu in navbar links for rollers
 
 Plot Roller (NEEDS Villain roller, Monster roller, Setting Roller)
