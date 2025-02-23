@@ -16,6 +16,8 @@ export const appConfig: ApplicationConfig = {
       clientId: 'X5dwusfjWbm69V6W3LGaP92zKXMps1em',
       authorizationParams: {
         redirect_uri: window.location.origin,
+        audience: "rollbard-api",
+        responseType: 'token id_token',
       }
     })
   ]

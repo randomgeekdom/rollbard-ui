@@ -1,6 +1,5 @@
-Develop New tabletop RPG based on FATE Condensed?
-
-Add auth to core API
+Create dummy endpoint to be accessed by frontend
+  Add call from UI
     Add cosmos to core API
       Character Roller - Add Save to API - Cosmos
       Fate Core - Add Save to API - Cosmos
@@ -14,7 +13,7 @@ Hero Roller - Add an entry
 Setting Roller - Add an entry
 
 World Roller
-  Region Roller
+  Region Roller - Finish Terrain Roller
   Nation Roller
   Faction Roller
 
@@ -40,4 +39,4 @@ Have a submenu in navbar links for rollers
 
 Plot Roller (NEEDS Villain roller, Monster roller, Setting Roller)
 
-Redo afterworld as a game in Rollbard
+Add Rollbard RPG page
