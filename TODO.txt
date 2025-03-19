@@ -1,10 +1,15 @@
+Vigilant City
+  Vigilante Power Roller
+    Vigilante Origin Roller
+      Vigilante Alignment Roller
+        Vigilante Roller
+          Vigilant City (use above rollers and villain roller)
+
 Create dummy endpoint to be accessed by frontend
   Add call from UI
     Add cosmos to core API
       Character Roller - Add Save to API - Cosmos
       Fate Core - Add Save to API - Cosmos
-
-Villain Roller
 
 Monster roller - Add an entry
 
@@ -13,8 +18,7 @@ Hero Roller - Add an entry
 Setting Roller - Add an entry
 
 World Roller
-  Region Roller - Finish Terrain Roller
-  Nation Roller
+  Nation Roller - Made up multiple regions
   Faction Roller
 
 Fate Core - Dice Roller
@@ -28,12 +32,6 @@ Auth Button => Make it pretty
 Rollbard Reviews
 
 Home Page - Update to put a focus on me "Anthony C. Jones"
-
-Vigilante Power Roller
-  Vigilante Origin Roller
-    Vigilante Alignment Roller
-      Vigilante Roller
-        Vigilant City (use above rollers and villain roller)
 
 Have a submenu in navbar links for rollers
 
