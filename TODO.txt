@@ -1,9 +1,4 @@
-Vigilant City
-  Vigilante Power Roller
-    Vigilante Origin Roller
-      Vigilante Alignment Roller
-        Vigilante Roller
-          Vigilant City (use above rollers and villain roller)
+Character roller allow deletion
 
 Create dummy endpoint to be accessed by frontend
   Add call from UI
@@ -26,8 +21,6 @@ Fate Core - Dice Roller
 
 Rollbard Library - Rename a Generator to Roller
   Add to rollbard library
-
-Auth Button => Make it pretty
 
 Rollbard Reviews
 

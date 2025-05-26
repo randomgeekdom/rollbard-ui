@@ -1,4 +1,3 @@
-
 .container {
   display: flex;
   flex-direction: column;
@@ -13,4 +12,77 @@
 .example-form, .character-display {
   flex: 1;
   padding: 16px;
+}
+
+.dice-roller {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.dice-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button[mat-raised-button] {
+  min-width: 80px;
+  height: 36px;
+}
+
+.roll-display {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dice-values {
+  display: flex;
+  gap: 8px;
+}
+
+.die-value {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.total-value {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.skill-name {
+  flex: 2;
+}
+
+.skill-level {
+  flex: 1;
+  max-width: 80px;
+}
+
+.roll-skill-button {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.roll-skill-button .mat-icon {
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  width: 18px;
 }

@@ -1,4 +1,26 @@
+<div class="dice-roller">
+  <div class="dice-container">
+    <button mat-raised-button color="primary" (click)="rollDice()">Roll</button>
+
+    <div class="modifier-container">
+      <mat-form-field appearance="outline" class="modifier-field">
+        <mat-label>Modifier</mat-label>
+        <input matInput type="number" [(ngModel)]="modifier" name="modifier">
+      </mat-form-field>
+    </div>
+
+    <div *ngIf="rollResult !== undefined" class="roll-display">
+      <div class="dice-values">
+        <span *ngFor="let die of diceValues" class="die-value">{{die}}</span>
+      </div>
+      <div class="total-value">
+        Total: {{rollResult}}
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container">
+
   <form class="example-form">
     <mat-form-field class="example-full-width">
       <mat-label>Name</mat-label>
@@ -60,13 +82,16 @@
 
     <div class="skills-container example-full-width">
       <mat-label>Skills</mat-label>
-      <div *ngFor="let skill of character.skills; let i = index">
-        <mat-form-field class="example-full-width">
+      <div *ngFor="let skill of character.skills; let i = index" class="skill-row">
+        <mat-form-field class="skill-name">
           <input matInput placeholder="Name" [value]="skill.name" readonly>
         </mat-form-field>
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="skill-level">
           <input matInput type="number" [(ngModel)]="character.skills[i].level" name="skills-{{i}}">
         </mat-form-field>
+        <button mat-mini-fab color="accent" (click)="rollSkill(skill)" class="roll-skill-button">
+          <mat-icon>casino</mat-icon>
+        </button>
       </div>
     </div>
 
