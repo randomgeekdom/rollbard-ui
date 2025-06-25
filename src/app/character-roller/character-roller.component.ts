@@ -8,6 +8,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {Gender, NPC, NPCGenerator} from '@randomgeekdom/rollbard';
 import {CharacterLoaderService} from "../services/character-loader.service";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-character-roller',
@@ -20,7 +21,9 @@ import {CharacterLoaderService} from "../services/character-loader.service";
     ReactiveFormsModule,
     CommonModule,
     MatCardModule,
-    FormsModule],
+    FormsModule,
+    MatIcon
+  ],
   templateUrl: './character-roller.component.html',
   styleUrl: './character-roller.component.scss'
 })
@@ -44,6 +47,19 @@ export class CharacterRollerComponent {
     this.npc = this.npcGenerator.Generate();
     this.characters = [...this.characters, this.npc];
     this.characterLoader.saveCharacters(this.characters);
+  }
+
+  deleteCharacter(character: NPC) {
+    const index = this.characters.findIndex(c => c === character);
+    if (index > -1) {
+      this.characters.splice(index, 1);
+      this.characterLoader.saveCharacters(this.characters);
+
+      // If we deleted the current npc, set a new current npc
+      if (this.npc === character) {
+        this.npc = this.characters[this.characters.length - 1] || this.npcGenerator.Generate();
+      }
+    }
   }
 
   GetGender(gender: Gender) {

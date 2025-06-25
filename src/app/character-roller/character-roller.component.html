@@ -33,7 +33,11 @@
     <div *ngFor="let character of orderedCharacters" class="character-card">
         <mat-card>
             <mat-card-header>
-                <mat-card-title>{{character.FirstName}} {{character.LastName}}</mat-card-title>
+                <mat-card-title>{{character.FirstName}} {{character.LastName}}
+                    <button mat-icon-button color="warn" (click)="deleteCharacter(character)" class="delete-button">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-card-title>
                 <mat-card-subtitle>
                   {{GetGenderPronounWithVerb(character.Gender)}} {{GetJobWithArticle(character.Job)}} from {{character.Hometown}}
                 </mat-card-subtitle>

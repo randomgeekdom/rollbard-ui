@@ -6,4 +6,24 @@
   .character-card {
     flex: 0 0 33.33%; /* Adjust the flex value to control the width of each card */
     margin: 10px;
+    position: relative;
+
+    .delete-button {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    mat-card-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 40px; /* Make room for the delete button */
+    }
   }
