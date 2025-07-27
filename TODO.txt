@@ -6,8 +6,6 @@ Create dummy endpoint to be accessed by frontend
 
 Monster roller - Add an entry
 
-Work on vigilant city
-
 Hero Roller - Add an entry
 
 Setting Roller - Add an entry
@@ -22,7 +20,3 @@ Rollbard Library - Rename a Generator to Roller
   Add to rollbard library
 
 Rollbard Reviews
-
-Home Page - Update to put a focus on me "Anthony C. Jones"
-
-Plot Roller (NEEDS Villain roller, Monster roller, Setting Roller)
